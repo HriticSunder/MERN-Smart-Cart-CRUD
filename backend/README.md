@@ -1,4 +1,4 @@
-# Bit-Basket - Backend
+# Smart Cart- Backend
 
 This folder contains the backend implementation for the Bit-Basket project. The backend is responsible for handling all server-side logic, including API endpoints, database interactions, authentication, and integrations with external services. Below is a comprehensive overview of the structure, functionality, and setup instructions for the backend.
 
@@ -75,7 +75,7 @@ backend/
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/ArunSundar-1805/Bit-Basket.git
+   git clone https://github.com/HriticSunder/MERN-Smart-Cart-CRUD.git
    cd Bit-Basket/backend
    ```
 

@@ -1,70 +1,193 @@
-# Getting Started with Create React App
+# Bit-Basket Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bit-Basket is a comprehensive platform for seamless management and exchange of digital assets. This README details the frontend portion located in [`/frontend`](https://github.com/ArunSundar-1805/Bit-Basket/tree/c79923003ae04529bb66bb76b496eb4bae83aa83/frontend), including all setup, features, usage, and specifics required to run and contribute to the project.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Project Overview](#project-overview)
+- [Live Demo](#live-demo)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation & Setup](#installation--setup)
+- [Configuration](#configuration)
+- [Usage Guide](#usage-guide)
+- [Folder Structure](#folder-structure)
+- [Testing](#testing)
+- [Contributing](#contributing)
+- [Troubleshooting](#troubleshooting)
+- [License](#license)
+- [Contact](#contact)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Overview
 
-### `npm test`
+Bit-Basket enables users to manage, track, and exchange digital assets via an intuitive web interface. The frontend is responsible for all visual components, user interactions, and connecting to backend APIs for data and authentication.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Live Demo
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+If available, you can view the live demo [here](#).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Features
 
-### `npm run eject`
+- **User Authentication:** Secure login and registration using JWT tokens.
+- **Asset Management:** Add, view, edit, and delete digital assets.
+- **Portfolio Dashboard:** Real-time overview of all assets and recent activities.
+- **Responsive Design:** Works seamlessly on desktop and mobile devices.
+- **Search & Filtering:** Quickly locate assets with advanced filters.
+- **Notifications:** Receive updates for price changes, new assets, and other events.
+- **Light/Dark Theme:** Toggle between themes for accessibility.
+- **Error Handling:** Clear messages and guidance for failed actions.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Tech Stack
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **React** (UI library)
+- **Redux** (Global state management)
+- **React Router** (Client-side routing)
+- **Material UI** (Component library)
+- **Axios** (HTTP requests)
+- **SASS/SCSS** (Styling)
+- **Jest** & **React Testing Library** (Testing)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## Installation & Setup
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Prerequisites
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Node.js v16+ ([download](https://nodejs.org/))
+- npm or yarn
 
-### Code Splitting
+### Steps
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/ArunSundar-1805/Bit-Basket.git
+   cd Bit-Basket/frontend
+   ```
+2. **Install Dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+3. **Environment Variables**
+   - Copy `.env.example` to `.env`:
+     ```bash
+     cp .env.example .env
+     ```
+   - Edit `.env` as needed (e.g. API URLs, secret keys).
+4. **Start Development Server**
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
+   - The app runs at [http://localhost:3000](http://localhost:3000).
 
-### Analyzing the Bundle Size
+5. **Production Build**
+   ```bash
+   npm run build
+   # or
+   yarn build
+   ```
+   - Output is in the `build/` directory.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **API Endpoint:** Set the backend API URL in `.env` (`REACT_APP_API_URL`).
+- **Other Configs:** Adjust theme defaults, authentication keys, or feature toggles in `.env`.
 
-### Advanced Configuration
+Example `.env`:
+```
+REACT_APP_API_URL=https://your-backend-url/api
+REACT_APP_THEME=dark
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## Usage Guide
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **Sign Up / Login:** Create an account or log in.
+- **Dashboard:** View your asset portfolio and recent activity.
+- **Add/Edit/Delete Assets:** Use the dashboard controls.
+- **Search/Filter:** Use search bar and filters for quick access.
+- **Notifications:** Check alerts for important updates.
+- **Settings:** Access via profile icon for preferences and themes.
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Folder Structure
+
+```
+frontend/
+├── public/            # Static files (index.html, favicon, etc.)
+├── src/
+│   ├── assets/        # Images, icons, theme files
+│   ├── components/    # Reusable React components
+│   ├── pages/         # Main page components (Dashboard, Login, etc.)
+│   ├── redux/         # Redux store, actions, reducers
+│   ├── routes/        # Route definitions
+│   ├── services/      # API interface and helpers
+│   ├── styles/        # Global and component SCSS files
+│   ├── utils/         # Utility functions
+│   ├── App.js         # Main App component
+│   ├── index.js       # Entry point
+│   └── ...            # Additional files
+```
+
+---
+
+## Testing
+
+Run all tests:
+```bash
+npm test
+# or
+yarn test
+```
+- Uses Jest and React Testing Library.
+- Add new tests in `src/__tests__/` or alongside components.
+
+---
+
+## Contributing
+
+1. Fork the repository.
+2. Create your branch:
+   ```bash
+   git checkout -b feature/your-feature
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Describe your feature"
+   ```
+4. Push and open a Pull Request.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
+
+---
+
+## Troubleshooting
+
+- **Port Conflict:** Change the default port in `.env` (`PORT=3001`).
+- **API Errors:** Ensure backend is running and API URL is correct.
+- **Dependency Issues:** Delete `node_modules` and reinstall with `npm install`.
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---

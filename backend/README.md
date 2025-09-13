@@ -76,7 +76,7 @@ backend/
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/HriticSunder/MERN-Smart-Cart-CRUD.git
-   cd Bit-Basket/backend
+   cd MERN-Ecommerce-CRUD/backend
    ```
 
 2. **Install Dependencies**

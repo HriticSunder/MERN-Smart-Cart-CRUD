@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# Environment files
+.env
+.venv/
+env/
+venv/
+*.env
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# VS Code settings
+.vscode/
+.history
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Node.js (if any frontend or scripts)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Misc
+*.sqlite3
+*.db
+*.bak
+tmp/
+*.tmp
+
+# Docker
+*.pid
+*.pid.lock
+
+# Test outputs
+htmlcov/
+coverage.xml
+*.cover
+*.coverage
+.cache/
+
+# Pytest
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+
+# Ignore backend specific files if any
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+
+# Ignore frontend build if present in root
+frontend/build/
+frontend/dist/

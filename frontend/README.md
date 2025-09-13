@@ -1,6 +1,6 @@
-# Bit-Basket Frontend
+#Smart Cart Frontend
 
-Bit-Basket is a comprehensive platform for seamless management and exchange of digital assets. This README details the frontend portion located in [`/frontend`](https://github.com/ArunSundar-1805/Bit-Basket/tree/c79923003ae04529bb66bb76b496eb4bae83aa83/frontend), including all setup, features, usage, and specifics required to run and contribute to the project.
+
 
 ---
 
@@ -70,8 +70,8 @@ If available, you can view the live demo [here](#).
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/ArunSundar-1805/Bit-Basket.git
-   cd Bit-Basket/frontend
+   git clone https://github.com/HriticSunder/MERN-Smart-Cart-CRUD.git
+   cd MERN-Ecommerce-CRUD/frontend
    ```
 2. **Install Dependencies**
    ```bash

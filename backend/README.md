@@ -1,6 +1,6 @@
 # Smart Cart- Backend
 
-This folder contains the backend implementation for the Bit-Basket project. The backend is responsible for handling all server-side logic, including API endpoints, database interactions, authentication, and integrations with external services. Below is a comprehensive overview of the structure, functionality, and setup instructions for the backend.
+This folder contains the backend implementation for the Smart_Cart project. The backend is responsible for handling all server-side logic, including API endpoints, database interactions, authentication, and integrations with external services. Below is a comprehensive overview of the structure, functionality, and setup instructions for the backend.
 
 ---
 
